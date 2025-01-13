@@ -8,7 +8,7 @@ Reproduce results by following these steps:
 
 # Prepare data - files in code/prep_data/
 
-1. Run code/prep_data/01_decompress_files.ipynb to unzip comprsesed data files. This produces AmItheAsshole_comments.parquet and AmItheAsshole_submissions.parquet.
+1. Run `code/prep_data/01_decompress_files.ipynb' to unzip comprsesed data files. This produces AmItheAsshole_comments.parquet and AmItheAsshole_submissions.parquet.
 2. Run code/prep_data/02_prepare_data.py with the year (i.e., one of 2013 - 2022) as the argument to the script to prepare individual, intermediate data files for each year (AITA_comments_intermediate_YEAR.parquet) as well as final STATA files for each year (aita_data_YEAR.dta).
 3. Run code/prep_data/03_combine_year_files.ipynb to combine the intermediate year files into one file (AITA_comments_intermediate_all.parquet).
 4. Run code/prep_data/02_prepare_data.py again with "all" as the argument to prepare dataset for all years (aita_data_all.dta).
