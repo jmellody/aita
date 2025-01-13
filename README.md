@@ -2,9 +2,7 @@
 Code for preparing and analyzing data for paper "Whether groups value agreement or dissent depends on the strength of consensus" which uses data from Reddit's r/AmItheAsshole (AITA) subreddit.
 
 ## Steps to reproduce
-Reproduce results by following these steps:
-
-1. Before running any of the code, be sure to change paths.
+Reproduce results with the steps below. Before running any of the code, be sure to change paths.
 
 # Prepare data - files in `code/prep_data/`
 
