@@ -14,5 +14,6 @@ Code for preparing and analyzing data for paper "Whether groups value agreement 
 
 ### Analyze data. Files in `code/analyze_data/`
 
-1. Run `code/analyze_data/01_main_models_final.do` (or `01_main_models_final.slurm` if on HPC). This runs all models and saves results.
-2. Run `code/analyze_data/02_tables.do` (or `02_tables.slurm` if on HPC). This creates all the tables as latex output.
+1. Run `code/analyze_data/01_main_models_final.do` (or `01_main_models_final.slurm` if on HPC) to run all main models and saves results.
+2. Run `code/analyze_data/02_rdit.do` (or `02_rdit.slurm` if on HPC) to run the Regression Discontinuity in Time Analysis.
+3. Run `code/analyze_data/03_tables.do` (or `03_tables.slurm` if on HPC). This creates all the tables as latex output.
