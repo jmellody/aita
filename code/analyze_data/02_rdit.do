@@ -33,7 +33,5 @@ lincom (_b[3._at] - _b[4._at]) //difference post-comment
 lincom (_b[1bn._at] - _b[2._at] ) - (_b[3._at] - _b[4._at]) // difference in the difference
 
 
-//margins, dydx(consensus_disagree) at(op_com_yet = (0 1))
-
 
 
