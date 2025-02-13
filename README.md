@@ -16,4 +16,4 @@ Code for preparing and analyzing data for paper "Whether groups value agreement 
 
 1. Run `code/analyze_data/01_main_models_final.do` to run all main models and save results.
 2. Run `code/analyze_data/02_rdit.do` to run the Regression Discontinuity in Time Analysis.
-3. Run `code/analyze_data/03_tables.do` to create all the tables as latex output.
+3. Run `code/analyze_data/03_tables.do` to create all the tables as LaTeX output.
