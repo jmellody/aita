@@ -5,15 +5,15 @@ Code for preparing and analyzing data for paper "Whether groups value agreement 
 
 ### Prepare data. Files in `code/prep_data/`
 
-1. Run `code/prep_data/01_decompress_files.ipynb` to unzip comprsesed data files. This produces AmItheAsshole_comments.parquet and AmItheAsshole_submissions.parquet.
-2. Run `code/prep_data/02_prepare_data.py` with the year (i.e., one of 2013 - 2022) as the argument to the script to prepare individual, intermediate data files for each year (AITA_comments_intermediate_YEAR.parquet) as well as final STATA files for each year (aita_data_YEAR.dta).
+1. Run `code/prep_data/01_decompress_files.ipynb` to unzip compressed data files. This produces AmItheAsshole_comments.parquet and AmItheAsshole_submissions.parquet.
+2. Run `code/prep_data/02_prepare_data.py` with the year (i.e., one of 2013 - 2022) as the argument to the script to prepare intermediate comment files for each year (AITA_comments_intermediate_YEAR.parquet) as well as final STATA data files for each year (aita_data_YEAR.dta).
 3. Run `code/prep_data/03_combine_year_files.ipynb` to combine the intermediate year files into one file (AITA_comments_intermediate_all.parquet).
 4. Run `code/prep_data/02_prepare_data.py` again with "all" as the argument to prepare dataset for all years (aita_data_all.dta).
-5. Run `code/prep_data/04_create_data.do` (or `04_create_data.slurm` if on HPC). This creates additional variables for analyses.
+5. Run `code/prep_data/04_create_data.do` to create additional variables and dataset for analyses.
 6. Run `code/prep_data/05_matching.ipynb` with 2022 data (aita_data_2022_prepped.dta) to produce matched data for the 2022 year (aita_data_2022_prepped_matched.dta)
 
 ### Analyze data. Files in `code/analyze_data/`
 
-1. Run `code/analyze_data/01_main_models_final.do` (or `01_main_models_final.slurm` if on HPC) to run all main models and saves results.
-2. Run `code/analyze_data/02_rdit.do` (or `02_rdit.slurm` if on HPC) to run the Regression Discontinuity in Time Analysis.
-3. Run `code/analyze_data/03_tables.do` (or `03_tables.slurm` if on HPC). This creates all the tables as latex output.
+1. Run `code/analyze_data/01_main_models_final.do` to run all main models and save results.
+2. Run `code/analyze_data/02_rdit.do` to run the Regression Discontinuity in Time Analysis.
+3. Run `code/analyze_data/03_tables.do` to create all the tables as latex output.
